@@ -1,4 +1,4 @@
 <launch>
-  <test pkg="nodelet" type="nodelet" name="nodelet_manager"  args="manager"/>
-  <test pkg="nodelet" type="nodelet" name="depth_image_proc" args="load depth_image_proc/convert_metric nodelet_manager"/>
+  <node pkg="nodelet" type="nodelet" name="nodelet_manager"  args="manager"/>
+  <test pkg="nodelet" type="nodelet" test-name="depth_image_proc" args="load depth_image_proc/convert_metric nodelet_manager"/>
 </launch>
